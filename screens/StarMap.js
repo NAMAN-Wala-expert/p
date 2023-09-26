@@ -19,7 +19,7 @@ export default class StarMapScreen extends Component {
                 <SafeAreaView style={styles.droidSafeArea} />
                 <View style={{ flex: 0.3, marginTop: 20, alignItems: 'center' }}>
                 <Text 
-                // style={styles.titleText}
+                 style={styles.titleText}
                 // style={{styles.titleText}}
                 // style=styles.titleText
                 // style={titleText}
@@ -30,29 +30,11 @@ export default class StarMapScreen extends Component {
                         placeholder="Enter your longitude"
                         placeholderTextColor="white"
 
-                        // onChangeText={(text) => {
-                        //     this.State({
-                        //         longitude: text
-                        //     })
-                        // }}
-
-                        // onChangeText={(text) => {
-                        //     this.setState(
-                        //         longitude: text
-                        //     )
-                        // }}
-
-                        // onChangeText={() => {
-                        //     this.setState({
-                        //         longitude: 
-                        //     })
-                        // }}
-
-                        // onChangeText={(text) => {
-                        //     this.setState({
-                        //         longitude: text
-                        //     })
-                        // }}
+                         onChangeText={(text) => {
+                             this.setState({
+                                 longitude: text
+                             })
+                         }}
                     />
 
                     <TextInput
